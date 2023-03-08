@@ -1,6 +1,10 @@
 import './App.css';
 import { createClient } from '@supabase/supabase-js';
 
+import HomeHeader from './components/HomeHeader';
+import Theme from './components/styled/Theme';
+import styled from 'styled-components';
+
 
 const SUPABASE_URL = process.env.REACT_APP_SUPABASE_URL;
 const SUPABASE_KEY = process.env.REACT_APP_SUPABASE_KEY;
@@ -20,14 +24,19 @@ const { data, error } = await supabase
 tryIt()
 
 
-
+const DarkPText = styled.p`
+color: ${props => props.theme.colors.darkPurple};
+`;
 
 function App() {
   
   return (
+    <Theme>
     <div className="App">
-
+      <HomeHeader />
+      <DarkPText>Hei</DarkPText>
     </div>
+    </Theme>
   );
 }
 
