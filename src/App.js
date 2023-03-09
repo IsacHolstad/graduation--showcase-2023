@@ -19,10 +19,13 @@ const tryIt = async () => {
 const { data, error } = await supabase
   .from('students')
   .select()
-  console.log(data)
+  console.log(data, error)
 }
 tryIt()
 
+
+// 1. example of using styling and theme directly in App.js. 
+//2. example in HomeHeader.js
 
 const DarkPText = styled.p`
 color: ${props => props.theme.colors.darkPurple};
