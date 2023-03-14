@@ -1,22 +1,20 @@
-import styled from 'styled-components';
+import tw from 'tailwind-styled-components'
 
 
 // 2. Example of styling, adding the style before importing the component to App
 // The styling can be in another styled component, or maybe directly here?
 
-const Nav = styled.nav`
-  padding: 10px 20px;
-  background-color: ${({ theme: { colors } }) => colors.persianGreen};
-  border-radius: 6px;
-  border: 0;
-  cursor: pointer;
+const Nav = tw.nav`
+  font-playfair
+
 `;
 
 
 const HomeHeader = () => {
     return (
         <Nav>
-            <img src="/header_img.jpg" alt="Header" />;
+            <img src="/header_img.jpg" alt="Header" />
+            <p>Funer</p>
         </Nav>
     )
 }

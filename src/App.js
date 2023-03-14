@@ -2,8 +2,12 @@ import './App.css';
 import { createClient } from '@supabase/supabase-js';
 
 import HomeHeader from './components/HomeHeader';
-import Theme from './components/styled/Theme';
-import styled from 'styled-components';
+import FormHeader from './components/FormHeader';
+import tw from "tailwind-styled-components"
+import {  Routes, Route, Link } from 'react-router-dom';
+import Footer from './components/Footer';
+import MainForm from './components/MainForm';
+
 
 
 const SUPABASE_URL = process.env.REACT_APP_SUPABASE_URL;
@@ -27,19 +31,35 @@ tryIt()
 // 1. example of using styling and theme directly in App.js. 
 //2. example in HomeHeader.js
 
-const DarkPText = styled.p`
-color: ${props => props.theme.colors.darkPurple};
+const DarkPText = tw.p`
+text-darkPurple
 `;
+
+
 
 function App() {
   
   return (
-    <Theme>
-    <div className="App">
-      <HomeHeader />
-      <DarkPText>Hei</DarkPText>
-    </div>
-    </Theme>
+    
+      <Routes>
+        <Route index element={
+           <div className="App">
+             <HomeHeader />
+            <button><Link to="/form">Form</Link></button>
+            <DarkPText>Hei</DarkPText>
+          </div>} 
+        />
+     
+        <Route path="form" element={
+          <>
+            <FormHeader/>
+            <MainForm></MainForm>
+            <Footer/>
+            </>} 
+        />
+      
+        <Route path="*" element={<div>Route not found</div>} />
+      </Routes>
   );
 }
 

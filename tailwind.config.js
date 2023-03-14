@@ -4,8 +4,15 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'playfair': 'Playfair Display, serif'
+    },
+      colors: {
+        'darkPurple': '#6B4492',
+        'bgColor': '#F9F8F8'
+      }
   },
   plugins: [],
-
+  }
 }
