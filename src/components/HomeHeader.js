@@ -22,8 +22,8 @@ const HomeHeader = () => {
                     </div>
                 </span>
                 <span>
-                    <h2 className="text-center mt-64 font-bold text-4xl">Pitch Yourself</h2>
-                    <p className="text-center container mx-8 mt-2 mx-auto">The Graduation Showcase website will give admiring family and friends,
+                    <h2 className="text-center mt-64 font-bold text-4xl">PITCH YOURSELF</h2>
+                    <p className="text-center container mx-8 mt-2 mx-auto sm:max-w-s grid-cols-5">The Graduation Showcase website will give admiring family and friends,
                         future employers, and envious fellow students the
                         opportunity to find the work and results of your time at Noroff
                         Leave your info for now, and your profile will be a part of the...
