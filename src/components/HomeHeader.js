@@ -12,10 +12,13 @@ const Nav = tw.nav`
 
 const HomeHeader = () => {
     return (
-        <Nav>
-            <img src="/header_img.jpg" alt="Header" />
-            <p>Funer</p>
-        </Nav>
+        <>
+            <Nav>
+                <img src="/header_img.jpg" alt="Header" />
+                <h1 className="my-1 text-5xl text-center">Graduation showcase</h1>
+            </Nav>
+
+        </>
     )
 }
  
