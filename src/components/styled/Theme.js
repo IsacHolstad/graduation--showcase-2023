@@ -8,7 +8,6 @@ const theme = {
       lightBlue: "#AFDBD2",
       onyx: "#36313D"
     },
-    fonts: ["sans-serif", "Roboto"],
     fontSizes: {
       small: "1em",
       medium: "2em",
@@ -20,5 +19,5 @@ const theme = {
     <ThemeProvider theme={theme}>{children}</ThemeProvider>
   );
   
-  export default Theme;
+  export default theme;
   
