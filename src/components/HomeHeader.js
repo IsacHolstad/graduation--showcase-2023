@@ -30,13 +30,13 @@ const HomeHeader = () => {
                     </p>
                     <div className="mx-auto my-40 text-center">
                         <button
-                            className="border-0 text-white font-bold text-sm bg-purple-500 mx-auto inline-block h-9 w-32 rounded-xl flex flex-col pt-1">
+                            className="border-0 text-white font-bold text-m bg-darkPurple mx-auto h-16 w-60 rounded-xl text-center shadow-sm">
                             REGISTER
                         </button>
                     </div>
+                    <img className="bottom-0" src="/footer_img.jpg"/>
                 </span>
             </Nav>
-
         </>
     )
 }
