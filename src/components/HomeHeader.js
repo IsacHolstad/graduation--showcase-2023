@@ -14,7 +14,6 @@ const HomeHeader = () => {
     return (
         <Nav>
             <img src="/header_img.jpg" alt="Header" />
-            <p>Funer</p>
         </Nav>
     )
 }

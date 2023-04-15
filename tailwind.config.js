@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'playfair': 'Playfair Display, serif'
+        'playfair': 'Playfair Display, serif',
+        'montSer': 'Montserrat, sans-serif'
     },
       colors: {
         'darkPurple': '#6B4492',
