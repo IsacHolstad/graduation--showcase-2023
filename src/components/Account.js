@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { createClient } from '@supabase/supabase-js'
 
-
 export default function Account({ session }) {
 
   const { user } = session
@@ -26,7 +25,7 @@ export default function Account({ session }) {
       if (error) {
         console.warn(error)
       } else if (data) {
-        console.log(data)
+        
         setUsername(data.username)
         setWebsite(data.website)
         setAvatarUrl(data.avatar_url)
@@ -35,13 +34,10 @@ export default function Account({ session }) {
     }
 
     getProfile()
-  }, [session])
+  }, [])
 
   async function updateProfile(event) {
     event.preventDefault()
-
-    const { user } = session
-
 
     const updates = {
       id: user.id,
