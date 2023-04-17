@@ -20,14 +20,14 @@ export default function Auth() {
   }
 
   return (
-    <div className="row flex flex-center">
-      <div className="col-6 form-widget">
-        <h1 className="header">Registeer</h1>
+    <div className="mt-20">
+      <div className="flex flex-col items-center justify-center text-center gap-8">
+        <h1 className="header">Register</h1>
         <p className="description">Sign in via magic link with your email below</p>
         <form className="form-widget" onSubmit={handleLogin}>
           <div>
             <input
-              className="inputField"
+              className="inputField w-full border border-black"
               type="email"
               placeholder="Your email"
               value={email}
@@ -36,7 +36,7 @@ export default function Auth() {
             />
           </div>
           <div>
-            <button className={'button block'} disabled={loading}>
+            <button className='border border-black px-12 py-2 my-8' disabled={loading}>
               {loading ? <span>Loading</span> : <span>Send magic link</span>}
             </button>
           </div>
